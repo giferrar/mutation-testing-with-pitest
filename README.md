@@ -105,7 +105,7 @@ boolean isLowerCase(char c) {
 Write an equivalent mutation:
 ```java
 boolean isLowerCase(char c) {
-    return (c >= 'a') && (c <= 'z'); // TODO Write your answer here
+    return (c >= 'a') == (c <= 'z');
 }
 ```
 ----
