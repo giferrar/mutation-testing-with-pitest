@@ -14,7 +14,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.13.4</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.13.4</version>
@@ -25,7 +32,7 @@
             <artifactId>junit-jupiter-params</artifactId>
             <version>5.13.4</version>
             <scope>test</scope>
-        </dependency>
+        </dependency -->
     </dependencies>
 
     <build>
@@ -48,6 +55,7 @@
                     <outputFormats>
                         <outputFormat>HTML</outputFormat>
                     </outputFormats>
+                    <verbose>true</verbose>
                 </configuration>
             </plugin>
         </plugins>
