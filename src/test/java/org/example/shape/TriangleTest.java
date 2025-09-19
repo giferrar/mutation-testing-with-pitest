@@ -34,6 +34,9 @@ public class TriangleTest {
                 Arguments.of(2, 2, 1, ISOSCELES),
                 Arguments.of(2, 1, 2, ISOSCELES),
                 Arguments.of(1, 2, 2, ISOSCELES),
+                Arguments.of(2, 2, 4, INVALID),
+                Arguments.of(2, 4, 2, INVALID),
+                Arguments.of(4, 2, 2, INVALID),
                 Arguments.of(2, 2, 5, INVALID),
                 Arguments.of(2, 5, 2, INVALID),
                 Arguments.of(5, 2, 2, INVALID)
