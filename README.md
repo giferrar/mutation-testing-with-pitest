@@ -67,12 +67,11 @@ public void testIsEligibleForDrivingLicense() {
 ```
 
 1) Which among the list of Pitest mutators creates a mutant that is not killed by the test? 
-    > // TODO Write your answer here... 
+    > Conditionals Boundary Mutator (CONDITIONALS_BOUNDARY)
 2) How does the mutant looks like?
     ```java
     public boolean isEligibleForDrivingLicense(int age) {
-        // TODO Mutate me!
-        if (age >= 18) {
+        if (age > 18) {
             return true;
         }
         return false;
@@ -82,9 +81,8 @@ public void testIsEligibleForDrivingLicense() {
     ```java
     @Test
     public void testIsEligibleForDrivingLicense() { 
-        // TODO Kill the mutant!
-        assertFalse(isEligibleForDrivingLicense(10));
-        assertTrue(isEligibleForDrivingLicense(20));
+        assertFalse(isEligibleForDrivingLicense(17));
+        assertTrue(isEligibleForDrivingLicense(18));
     }
     ```
 ----
