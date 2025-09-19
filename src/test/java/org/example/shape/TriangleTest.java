@@ -24,6 +24,8 @@ public class TriangleTest {
                 Arguments.of(0, 0, 0, INVALID),
                 Arguments.of(1, 0, 0, INVALID),
                 Arguments.of(1, 1, 0, INVALID),
+                Arguments.of(0, 1, 1, INVALID),
+                Arguments.of(1, 0, 1, INVALID),
                 Arguments.of(1, 2, 3, INVALID),
                 Arguments.of(1, 3, 2, INVALID),
                 Arguments.of(3, 1, 2, INVALID),

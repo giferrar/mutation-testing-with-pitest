@@ -55,7 +55,7 @@
                     <outputFormats>
                         <outputFormat>HTML</outputFormat>
                     </outputFormats>
-                    <verbose>true</verbose>
+                    <!-- verbose>true</verbose -->
                 </configuration>
             </plugin>
         </plugins>
