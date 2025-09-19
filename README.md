@@ -100,14 +100,14 @@ These mutations are syntactically different from the original code but semantica
 Given the following code:
 ```java
 boolean isLowerCase(char c) {
-    return c >= 'a' && c <= 'z';
+    return (c >= 'a') && (c <= 'z');
 }
 ```
 
 Write an equivalent mutation:
 ```java
 boolean isLowerCase(char c) {
-    return c >= 'a' && c <= 'z'; // TODO Write your answer here
+    return (c >= 'a') && (c <= 'z'); // TODO Write your answer here
 }
 ```
 ----
@@ -310,7 +310,7 @@ Now it is possible to generate a report and upload it to SonarQube wit the comma
 
 ----
 
-#### ✍️ Exercise 4
+#### ✍️ Exercise 5
 
 1) Upload a Mutation Test report to SonarQube
 2) Log in to SonarQube and observe the dashboard
@@ -323,6 +323,7 @@ Now it is possible to generate a report and upload it to SonarQube wit the comma
 
 - In this workshop learned the theory behind mutation testing and why it is helpful in the context of unit testing.
 - We learned to use Pitest as a Maven plugin to generate a report of the mutants detected in the codebase.
+- We learned how to install the *Mutation Analysis* Plugin in SonarQube and how to upload a Mutation Test report to it.
 
 ## 📚 Resources
 - _Marco Tulio Valente_, Software Engineering: A Modern Approach: [Mutation Testing: A Practical Overview](https://softengbook.org/articles/mutation-testing)
